@@ -7,6 +7,9 @@ function App() {
   const incValue = () => {
     if (count <= 20) {
       setCount((preverseCounter) => preverseCounter + 1);
+      setCount((preverseCounter) => preverseCounter + 1);
+      setCount((preverseCounter) => preverseCounter + 1);
+      setCount((preverseCounter) => preverseCounter + 1);
     }
   };
   const dcreValue = () => {
