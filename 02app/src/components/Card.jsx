@@ -1,7 +1,7 @@
 import React from "react";
 
-const Card = ({ name }) => {
-  console.log(name);
+const Card = ({ name, btn }) => {
+  console.log(name, btn);
   return (
     <>
       <div className="relative h-[400px] w-[300px] rounded-md ">
@@ -17,8 +17,8 @@ const Card = ({ name }) => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
             debitis?
           </p>
-          <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
-            View Profile →
+          <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-black">
+            {btn}
           </button>
         </div>
       </div>
