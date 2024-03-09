@@ -5,7 +5,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   const incValue = () => {
-    if (count < 20) {
+    if (count <= 20) {
       setCount((preverseCounter) => preverseCounter + 1);
     }
   };
