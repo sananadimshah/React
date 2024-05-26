@@ -13,7 +13,6 @@ function App() {
         <Login />
         <Profile />
       </>
-      //{" "}
     </UserContextProvider>
   );
 }
