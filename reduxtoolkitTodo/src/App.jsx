@@ -1,16 +1,15 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import AddTodo from "./componant/AddTodo.jsx";
+import Todos from "../src/componant/Todos.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <h1 className="text-3xl font-bold underline text-blue-700">
-        Hello world!
-      </h1>
+      <h1>Hello world!</h1>
+      <AddTodo />
+      <Todos />
     </>
   );
 }
