@@ -68,6 +68,7 @@ export default function App() {
         <FormSplitBill
           seletedFriend={seletedFriend}
           hanbleSplitBill={hanbleSplitBill}
+          key={seletedFriend.id}
         />
       )}
     </div>
