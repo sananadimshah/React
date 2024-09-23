@@ -1,32 +1,34 @@
-import React, { useCallback, useState } from "react";
+import React from "react";
 
 import ReactDOM from "react-dom/client";
-// import "./index.css";
-// import App from "./App";
-import StarRating from "./Star.js";
+import "./index.css";
+// import App from "./tempMovieData";
+import AppV1 from "./AppV1.js";
+// import StarRating from "./Star.js";ss
 
-function Test() {
-  const [movieRanting, setMovieRanting] = useState();
-  return (
-    <>
-      <StarRating maxRating={10} userRating={setMovieRanting} />
-      <p>Your gave this movie rating {movieRanting} </p>
-    </>
-  );
-}
+// function Test() {
+//   const [movieRanting, setMovieRanting] = useState();
+//   return (
+//     <>
+//       <StarRating maxRating={10} userRating={setMovieRanting} />
+//       <p>Your gave this movie rating {movieRanting} </p>
+//     </>
+//   );
+// }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
+    <AppV1 />
 
-    <StarRating
+    {/* <StarRating
       message={["Terrible", "Bad", "Okay", "Good", "Amazing"]}
       defaultRating={3}
     />
 
     <StarRating color="red" size="30" className="test" />
-    <Test />
+    <Test /> */}
   </React.StrictMode>
 );
 
